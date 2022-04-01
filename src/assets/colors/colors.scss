@@ -1,0 +1,11 @@
+@use 'nord/nord-light' as nord-light;
+@use 'nord/nord-dark' as nord-dark;
+
+@function nord($light-or-dark, $color) {
+  @if $light-or-dark == "light" {
+    @return map-get(nord-light.$nord, $color),
+  }
+  @else {
+    @return map-get(nord-dark.$nord, $color),
+  }
+}
