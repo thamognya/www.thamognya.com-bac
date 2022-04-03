@@ -1,6 +1,4 @@
-@use 'assets/colors/colors' as colors
-
-$dark_or_light: dark
+@use 'styles/colors/colors' as colors
 
 /*  bg: #2e3440,
   fg: #eceff4,
@@ -15,3 +13,16 @@ $dark_or_light: dark
   gray-blue: #81a1c1,*/
 
 // example usage: colors.nord($dark_or_light, bg)
+
+// light mode
+
+$dark_or_light: light
+
+* 
+    background: colors.nord($dark_or_light, bg)
+
+
+// dark mode
+
+*.dark 
+    background: colors.nord($dark_or_light, bg)

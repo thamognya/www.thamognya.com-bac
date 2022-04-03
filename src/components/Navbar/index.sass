@@ -1,6 +1,5 @@
-@use '../../assets/colors/colors' as colors
+@use '../../styles/colors/colors' as colors
 
-$dark_or_light: dark
 
 /*  bg: #2e3440,
   fg: #eceff4,
@@ -15,6 +14,10 @@ $dark_or_light: dark
   gray-blue: #81a1c1,*/
 
 // example usage: colors.nord($dark_or_light, bg)
+
+//light mode
+
+$dark_or_light: light
 
 nav
     display: flex
@@ -36,6 +39,35 @@ nav
     font-size: 1.2rem
 
 .navlogo img
+    width: 5rem
+    height: 5rem
+    border-radius: 50%
+    margin-right: 1rem
+
+// dark mode
+
+$dark_or_light: dark
+
+nav.dark
+    display: flex
+    justify-content: space-around
+    align-items: center
+    min-height: 5vh
+    margin-top: 0.5rem
+    margin-bottom: 1rem
+
+.navlinks.dark
+    list-style-type: none
+    display: flex
+    gap: 1rem
+    margin-left: 1rem
+
+.navlinks li a.dark
+    color: colors.nord($dark_or_light, red)
+    text-decoration: none
+    font-size: 1.2rem
+
+.navlogo img.dark
     width: 5rem
     height: 5rem
     border-radius: 50%
