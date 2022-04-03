@@ -1,7 +1,12 @@
 import './index.sass';
+import Navbar from '../Navbar/';
 
 const Layout = () => {
-    return <>hello</>
-}
+    return (
+        <div className="layout">
+            <Navbar />
+        </div>
+    );
+};
 
 export default Layout;
