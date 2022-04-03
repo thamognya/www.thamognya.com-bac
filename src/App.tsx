@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.sass';
-import { Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 
 function App() {
   return (
