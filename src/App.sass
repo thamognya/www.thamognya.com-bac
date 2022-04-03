@@ -1,5 +1,19 @@
 @use 'assets/colors/colors' as colors
 
+$dark_or_light: dark
+
+/*  bg: #2e3440,
+  fg: #eceff4,
+  red: #bf616a,
+  orange: #d08770,
+  yellow: #ebcb8b,
+  green: #a3be8c,
+  purple: #b48ead,
+  teal: #88c0d0,
+  blue: #5e81ac,
+  turquoise: #8fbcbb,
+  gray-blue: #81a1c1,*/
+
 .App
   text-align: center
 
@@ -12,7 +26,7 @@
     animation: App-logo-spin infinite 20s linear
 
 .App-header
-  background-color: colors.nord(light, bg)
+  background-color: colors.nord($dark_or_light, bg)
   min-height: 100vh
   display: flex
   flex-direction: column

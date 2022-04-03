@@ -1,6 +1,7 @@
 @use 'nord/nord-light' as nord-light
 @use 'nord/nord-dark' as nord-dark
 
+// this function is used to grab the colors from the nord dir.
 @function nord($light-or-dark, $color)
   @if $light-or-dark == "light"
     @return map-get(nord-light.$nord, $color)
