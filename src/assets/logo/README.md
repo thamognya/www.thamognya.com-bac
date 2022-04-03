@@ -1,2 +1,0 @@
-TODO:
-- make the logo
