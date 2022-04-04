@@ -1,12 +1,19 @@
 import './index.sass';
 import ThemeToggle from '../ThemeToggle';
 
+const website = {
+    homepage: "https://www.thamognya.com/",
+    blog: "https://blog.thamognya.com/",
+    git: "https://git.thamognya.com/",
+    logo: "https://avatars.githubusercontent.com/u/98194153?v=4",
+};
+ 
 const Navbar = () => {
     return (
         <nav>
             <div className="navlogo">
                 <a href="/">
-                    <img src="https://avatars.githubusercontent.com/u/98194153?v=4" alt="logo" />
+                    <img src={website.logo} alt="logo" />
                 </a>
             </div>
             <ul className="navlinks">
@@ -14,10 +21,10 @@ const Navbar = () => {
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="https://git.thamognya.com">Git</a>
+                    <a href={website.git}>Git</a>
                 </li>
                 <li>
-                    <a href="https://blog.thamognya.com">Blog</a>
+                    <a href={website.blog}>Blog</a>
                 </li>
                 <li>
                     <a href="/contact">Contact</a>
