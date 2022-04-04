@@ -3,6 +3,7 @@ import { FaRegMoon, FaRegSun } from "react-icons/fa"
 import "./index.scss"
 
 const ThemeToggle = () => {
+    const icon_size = 30;
     const [icon, setIcon] = useState('FaRegSun')
     const changeTheme = (iconName) => {
         const item = localStorage.getItem("theme")
@@ -19,7 +20,7 @@ const ThemeToggle = () => {
         setIcon(iconName)
     }
     const themeIsLight = (icon === 'FaRegMoon')
-    const Icon = themeIsLight ? <FaRegSun size={20} onClick={() => changeTheme('FaRegSun') }/> : <FaRegMoon size={20} onClick={() => changeTheme('FaRegMoon') }/>
+    const Icon = themeIsLight ? <FaRegSun size={icon_size} onClick={() => changeTheme('FaRegSun') }/> : <FaRegMoon size={icon_size} onClick={() => changeTheme('FaRegMoon') }/>
     return (
         <div className="icon">
             {Icon}
