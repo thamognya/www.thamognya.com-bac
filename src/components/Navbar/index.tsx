@@ -1,5 +1,6 @@
 import './index.sass';
 import ThemeToggle from '../ThemeToggle';
+import { FaHome, FaGitAlt, FaBlog, FaContao } from 'react-icons/fa';
 
 const website = {
     homepage: "https://www.thamognya.com/",
@@ -7,6 +8,8 @@ const website = {
     git: "https://git.thamognya.com/",
     logo: "https://avatars.githubusercontent.com/u/98194153?v=4",
 };
+
+const size_of_icon = 30;
  
 const Navbar = () => {
     return (
@@ -18,16 +21,16 @@ const Navbar = () => {
             </div>
             <ul className="navlinks">
                 <li>
-                    <a href="/">Home</a>
+                    <a href="/" target="_blank" rel="noopener noreferrer"><FaHome size={size_of_icon} /></a>
                 </li>
                 <li>
-                    <a href={website.git}>Git</a>
+                    <a href={website.git} target="_blank" rel="noopener noreferrer"><FaGitAlt size={size_of_icon} /></a>
                 </li>
                 <li>
-                    <a href={website.blog}>Blog</a>
+                    <a href={website.blog} target="_blank" rel="noopener noreferrer"><FaBlog size={size_of_icon} /></a>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <a href="/contact" target="_blank" rel="noopener noreferrer"><FaContao size={size_of_icon} /></a>
                 </li>
                 <li>
                     <ThemeToggle />
