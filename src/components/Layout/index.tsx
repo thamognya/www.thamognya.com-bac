@@ -4,13 +4,15 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
     return ( 
-    <div className="App">
+    <div className="website">
         <Navbar />
-        <div className="page">
+        <div className="pages">
             <Outlet />
         </div>
     </div>
     );
 }
+
+// adds outlet below navbar
 
 export default Layout;

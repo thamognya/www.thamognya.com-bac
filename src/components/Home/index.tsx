@@ -1,9 +1,12 @@
 import './index.sass';
+import First from './First';
+import Second from './Second';
 
 const Home = () => {
     return (
         <div className="home">
-            <h1>Home</h1>
+            <First />
+            <Second />
         </div>
     );
 }
