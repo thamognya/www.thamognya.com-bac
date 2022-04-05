@@ -1,5 +1,5 @@
-import Navbar from '../Navbar';
 import './index.sass';
+import Navbar from '../Navbar';
 import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
