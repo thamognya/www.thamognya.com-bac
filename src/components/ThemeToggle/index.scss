@@ -1,0 +1,6 @@
+@import url("../../styles/global/colors.css");
+
+.icon * {
+    cursor: pointer;
+    fill: var(--fg);
+}
