@@ -18,10 +18,7 @@ body {
     --yellow: #ebcb8b;
     --green: #a3be8c;
     --purple: #b48ead;
-    --teal: #88c0d0;
     --blue: #5e81ac;
-    --turquoise: #8fbcbb;
-    --gray-blue: #81a1c1;
 }
 
 body.dark {
@@ -32,8 +29,5 @@ body.dark {
     --yellow: #ebcb8b;
     --green: #a3be8c;
     --purple: #b48ead;
-    --teal: #88c0d0;
     --blue: #5e81ac;
-    --turquoise: #8fbcbb;
-    --gray-blue: #81a1c1;
 }
