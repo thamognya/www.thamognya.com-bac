@@ -9,7 +9,7 @@ function App() {
     // converting to string and assigning it to document.body.className
     const themeRaw: string = localStorage.getItem('theme')!;
     document.body.className = themeRaw;
-//    setIcon(iconName)
+    //
   return (
     <div className="App">
       <Routes>
