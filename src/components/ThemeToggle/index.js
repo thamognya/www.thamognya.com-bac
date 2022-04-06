@@ -16,7 +16,7 @@ const ThemeToggle = () => {
         // defines theme
         let iconName;
         // defines iconName
-        if (item === "dark") {
+        if (item === "dark" && item2 === "FaRegSun") {
             theme = "";
             // the theme (css selector) for light is empty (i.e. light more in css)
             iconName = "FaRegMoon";
@@ -41,18 +41,18 @@ const ThemeToggle = () => {
         // sets item in localstorage
         document.body.className = localStorage.getItem("theme");
         // sets the css selector for the body
-        setIcon(localStorage.getItem("iconName"))
+        setIcon(localStorage.getItem("iconName"));
         // sets the icon
     }
-    const themeIsDark = (localStorage.getItem("iconName") === 'FaRegSun')
+    const themeIsDark = (localStorage.getItem("iconName") === 'FaRegSun');
     // checks if the icon is sun
-    const Icon = themeIsDark ? <FaRegSun size={icon_size} onClick={() => changeTheme('FaRegSun') }/> : <FaRegMoon size={icon_size} onClick={() => changeTheme('FaRegMoon') }/>
+    const Icon = themeIsDark ? <FaRegSun size={icon_size} onClick={() => changeTheme() }/> : <FaRegMoon size={icon_size} onClick={() => changeTheme() }/>;
     // if the icon is sun, then the icon is moon, otherwise the icon is sun
     return (
         <div className="icon">
             {Icon}
         </div>
-    )
+    );
 }
 
 export default ThemeToggle;

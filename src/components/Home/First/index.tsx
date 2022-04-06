@@ -10,7 +10,7 @@ const First = () => {
                     onInit={(typewriter) => {
                         typewriter
                             .typeString('Hello, my name is Thamognya')
-                            .start();
+.start();
                     }} 
                 />
             </div>
