@@ -1,6 +1,5 @@
 import './index.sass';
 import Typewriter from 'typewriter-effect';
-import {FaArrowDown} from 'react-icons/fa';
 
 const First = () => {
     return (
@@ -10,14 +9,9 @@ const First = () => {
                     onInit={(typewriter) => {
                         typewriter
                             .typeString('Hello, my name is Thamognya')
-.start();
-                    }} 
+                            .start();
+                    }}
                 />
-            </div>
-            <div className="subtitle">
-                <h2>Welcome to my website.</h2>
-                <h2>Scroll down</h2>
-                <FaArrowDown />
             </div>
         </section>
     );

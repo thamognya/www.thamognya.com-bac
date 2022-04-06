@@ -1,12 +1,12 @@
 import './index.sass';
 import ThemeToggle from '../ThemeToggle';
 import { FaHome, FaGitAlt, FaBlog, FaContao } from 'react-icons/fa';
+import logo from '../../assets/logo/logo.svg';
 
 const website = {
     homepage: "https://www.thamognya.com/",
     blog: "https://blog.thamognya.com/",
     git: "https://git.thamognya.com/",
-    logo: "https://avatars.githubusercontent.com/u/98194153?v=4",
 };
 
 const size_of_icon = 30;
@@ -16,7 +16,7 @@ const Navbar = () => {
         <nav>
             <div className="navlogo">
                 <a href="/">
-                    <img src={website.logo} alt="logo" />
+                    <img src={logo} alt="logo" />
                 </a>
             </div>
             <ul className="navlinks">
