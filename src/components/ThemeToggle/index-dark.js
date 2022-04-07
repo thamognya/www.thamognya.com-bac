@@ -5,7 +5,7 @@ import "./index.scss"
 const ThemeToggle = () => {
     const icon_size = 30;
     // icon size
-    const [icon, setIcon] = useState('FaRegMoon');
+    const [icon, setIcon] = useState('FaRegSun');
     // defining 2 stuff
     const changeTheme = () => {
         const item = localStorage.getItem("theme");
@@ -16,19 +16,19 @@ const ThemeToggle = () => {
         // defines theme
         let iconName;
         // defines iconName
-        if (item === "light" && item2 === "FaRegMoon") {
+        if (item === "dark" && item2 === "FaRegSun") {
             theme = "";
             // the theme (css selector) for light is empty (i.e. light more in css)
-            iconName = "FaRegSun";
+            iconName = "FaRegMoon";
             // icon that should be used in light time
             localStorage.setItem('theme', theme);
             // sets item in localstorage
             localStorage.setItem('iconName', iconName);
             // sets item in localstorage
         } else {
-            theme = "light";
+            theme = "dark";
             // the theme (css selector) for dark is dark
-            iconName = "FaRegMoon";
+            iconName = "FaRegSun";
             // icon that should be used in dark time
             localStorage.setItem('theme', theme);
             // sets item in localstorage
@@ -44,9 +44,9 @@ const ThemeToggle = () => {
         setIcon(localStorage.getItem("iconName"));
         // sets the icon
     }
-    const themeIsLight = (localStorage.getItem("iconName") === 'FaRegMoon');
+    const themeIsDark = (localStorage.getItem("iconName") === 'FaRegSun');
     // checks if the icon is sun
-    const Icon = themeIsLight ? <FaRegMoon size={icon_size} onClick={() => changeTheme() }/> : <FaRegSun size={icon_size} onClick={() => changeTheme() }/>;
+    const Icon = themeIsDark ? <FaRegSun size={icon_size} onClick={() => changeTheme() }/> : <FaRegMoon size={icon_size} onClick={() => changeTheme() }/>;
     // if the icon is sun, then the icon is moon, otherwise the icon is sun
     return (
         <div className="icon">
