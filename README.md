@@ -1,7 +1,16 @@
+This is the source code of my website: www.thamognya.com, that is deployed on vercel.com.
+
+
+
 # Install this apps requirements by doing
 
-# `npm i --force`
+`npm i --force`
 
+due to some requirements that require older versions.
+
+<hr>
+
+# Basic React App
 
 # Getting Started with Create React App
 
