@@ -1,6 +1,5 @@
 This is the source code of my website: www.thamognya.com, that is deployed on vercel.com.
 
-
 # Install this apps requirements by doing
 
 `npm i --force`
