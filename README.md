@@ -1,5 +1,7 @@
 This is the source code of my website: www.thamognya.com, that is deployed on vercel.com.
 
+I will rewrite this code in rust wasm in the future.
+
 # Install this apps requirements by doing
 
 `npm i --force`
