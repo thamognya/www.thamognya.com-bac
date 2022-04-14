@@ -90,12 +90,11 @@ const Error = () => {
     return (
   <div className='app'>
     <div className='text-container'>
-      <h1>Page Not Found</h1>
-      <ul>
-        <li>
-            <p><a href='/'>Go to Homepage</a></p>
-        </li>
-    </ul>
+      <h1>404 Error</h1>
+      <h2>Page Not Found</h2>
+      <p>These are my website pages that exist:</p>
+      <p> - HomePage</p>
+      <p> - Contact</p>
     </div>
     <Canyon/>
   </div>
