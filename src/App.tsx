@@ -19,8 +19,8 @@ function App() {
         <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/startpage" element={<>Hello</>} />
         </Route>
-        <Route path="/startpage" element={<>Hello</>} />
         <Route path="*" element={<Error />} />
       </Routes>
     </div>
