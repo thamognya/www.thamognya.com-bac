@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import Contact from './components/Contact';
+import Error from './components/Error';
 
 function App() {
     // makes the theme persist by getting the item theme from local storage
@@ -19,6 +20,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/contact" element={<Contact />} />
         </Route>
+        <Route path="/startpage" element={<>Hello</>} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );
