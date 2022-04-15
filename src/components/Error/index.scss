@@ -1,22 +1,22 @@
 @import url("../../styles/global/colors.css");
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-$gray-400: #9ca3af;
+$gray-400: var(--fg);
 $gray-500: #6b7280;
 $gray-600: #4b5563;
 $gray-700: #374151;
 $gray-800: #1f2937;
-$gray-900: #111827;
+$gray-900: var(--bg);
 
-$cyan-500: #06b6d4;
+$cyan-500: var(--blue);
 $cyan-600: #0891b2;
 $cyan-700: #0e7490;
 $cyan-800: #155e75;
 
 .body {
   background-color: $gray-900;
-  width: 100vw;
-  height: 100vh;
+  width: 99vw;
+  height: 90vh;
   font-family: 'Space Mono', monospace;
 }
 .error {
@@ -46,6 +46,7 @@ $cyan-800: #155e75;
       font-size: 3rem;
       margin-bottom: 1rem;
       background: rgba(255, 122, 89, 0);
+      color: var(--red);
     }
     .p {
       color: $gray-500;
@@ -53,10 +54,10 @@ $cyan-800: #155e75;
       letter-spacing: 0.05rem;
       margin: 0.5rem 0;
       background: rgba(255, 122, 89, 0);
-
+      color: var(--fg);
     }
     .a {
-      color: $cyan-500;
+      color: var(--blue);
       background: rgba(255, 122, 89, 0);
       
     &:hover {
@@ -85,14 +86,14 @@ $cyan-800: #155e75;
   }
   
  text {
-    fill: $gray-500;
+    fill: var(--fg);
     font-size: 660px;
     font-weight: 800;
-    filter: drop-shadow(0 0 50px $gray-800);
+    filter: drop-shadow(0 0 50px var(--blue));
   }
   
   > path:nth-child(8) {
-    fill: $gray-900;
+    fill: var(--bg);
   }
 }
 
@@ -104,6 +105,6 @@ $cyan-800: #155e75;
     fill: $cyan-800;
   }
   path:nth-child(3) {
-    fill: black;
+    fill: var(--fg);
   }
 }

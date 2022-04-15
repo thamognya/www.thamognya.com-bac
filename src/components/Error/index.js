@@ -91,9 +91,8 @@ const Error = () => {
     <div className="all body">
   <div className='error'>
     <div className='error-container'>
-      <h1 className="h1">404 Error</h1>
-      <h2 className="h2">Page Not Found</h2>
-      <p className="p">These are my website pages that exist:</p>
+      <h2 className="h2">404 Error</h2>
+      <p className="p">Page Not Found, These are my website pages that exist:</p>
       <p className="p"> - <a className="a">HomePage</a></p>
       <p className="p"> - <a className="a">Contact</a></p>
     </div>

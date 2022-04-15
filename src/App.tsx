@@ -20,8 +20,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/startpage" element={<>Hello</>} />
+            <Route path="*" element={<Error />} />
         </Route>
-        <Route path="*" element={<Error />} />
       </Routes>
     </div>
   );
