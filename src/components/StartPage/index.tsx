@@ -1,16 +1,19 @@
-import './index.sass';
+import './index.scss';
 
 const constant = {
     user: 'jeff',
     host: 'jefftux',
+    search: 'https://searx.be/',
 };
+
+//<span id="cursor">_</span>
 
 const StartPage = () => {
     return (
-        <div className="start-page">
-            <div className="html">
-                <div className="body">
-                    <p><span>{constant.user}@{constant.host}  &gt; </span>newtab</p>
+        <div className="startpage">
+            <html>
+                <body>
+                    <p><span>{constant.user}@{constant.host}&nbsp;&gt;&nbsp;&nbsp;</span>startpage -al</p>
                     <nav className="terminal">
                         <ul>
                             <li>general</li>
@@ -24,9 +27,12 @@ const StartPage = () => {
                             <li><a href="">tmp</a></li>
                         </ul>
                     </nav>
-                    <p><span>{constant.user}@{constant.host} &gt; </span> <span id="cursor">_</span></p>
-                </div>
-            </div>
+                    <form autoComplete="off" action={constant.search} method="POST">
+                        <label>{constant.user}@{constant.host} &gt; </label>
+                        <input id="q" name="q" type="search" placeholder="" />
+                    </form>
+                </body>
+            </html>
         </div>
     );
 }

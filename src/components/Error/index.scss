@@ -14,7 +14,7 @@ $cyan-700: #0e7490;
 $cyan-800: #155e75;
 
 .body {
-  background-color: $gray-900;
+  background-color: var(--bg);
   width: 99vw;
   height: 90vh;
   font-family: 'Space Mono', monospace;

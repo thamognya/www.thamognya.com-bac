@@ -46,7 +46,13 @@ const ThemeToggle = () => {
     }
     const themeIsLight = (localStorage.getItem("iconName") === 'FaRegMoon');
     // checks if the icon is sun
-    const Icon = themeIsLight ? <FaRegMoon size={icon_size} onClick={() => changeTheme() }/> : <FaRegSun size={icon_size} onClick={() => changeTheme() }/>;
+    let Icon;
+    //const Icon = themeIsLight ? <FaRegMoon size={icon_size} onClick={() => changeTheme() }/> : <FaRegSun size={icon_size} onClick={() => changeTheme() }/>;
+    if (localStorage.getItem("iconName") === "FaRegMoon") {
+        Icon = <FaRegMoon size={icon_size} onClick={() => changeTheme() }/>
+    } else {
+        Icon = <FaRegSun size={icon_size} onClick={() => changeTheme() }/>
+    }
     // if the icon is sun, then the icon is moon, otherwise the icon is sun
     return (
         <div className="icon">
