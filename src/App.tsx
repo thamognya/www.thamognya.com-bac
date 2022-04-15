@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Error from './components/Error';
+import StartPage from './components/StartPage';
 
 function App() {
     // makes the theme persist by getting the item theme from local storage
@@ -19,9 +20,9 @@ function App() {
         <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/startpage" element={<>Hello</>} />
             <Route path="*" element={<Error />} />
         </Route>
+            <Route path="/startpage" element={<StartPage />} />
       </Routes>
     </div>
   );
