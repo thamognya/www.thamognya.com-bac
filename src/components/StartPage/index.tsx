@@ -16,19 +16,19 @@ const StartPage = () => {
                     <p><span>{constant.user}@{constant.host}&nbsp;&gt;&nbsp;&nbsp;</span>startpage -al</p>
                     <nav className="terminal">
                         <ul>
-                            <li>general</li>
+                            <li>General</li>
                             <li><a href="">tmp</a></li>
                             <li><a href="">tmp</a></li>
                             <li><a href="">tmp</a></li>
                         </ul>
                         <ul>
-                            <li>education</li>
+                            <li>Education</li>
                             <li><a href="">tmp</a></li>
                             <li><a href="">tmp</a></li>
                         </ul>
                     </nav>
                     <form autoComplete="off" action={constant.search} method="POST">
-                        <label>{constant.user}@{constant.host} &gt; </label>
+                        <label>{constant.user}@{constant.host}<span>&nbsp;</span>&gt;<span>&nbsp;</span></label>
                         <input id="q" name="q" type="search" placeholder="" />
                     </form>
                 </body>
