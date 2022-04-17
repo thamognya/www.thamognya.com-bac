@@ -4,7 +4,6 @@ I will rewrite this code in rust wasm in the future.
 
 
 
-
 # Install this apps requirements by doing
 
 `npm i --force`
