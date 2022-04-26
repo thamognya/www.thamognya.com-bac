@@ -1,0 +1,42 @@
+/*
+ 
+bg: #fbf1c7;
+fg: #3c3836;
+red: #cc241d;
+orange: #d65d0e;
+yellow: #d79921;
+green: #98971a;
+purple: #b16286;
+teal: #689d6a;
+blue: #458588;
+turquoise: #689d6a;
+gray-blue: #076678;
+ */
+
+body {
+    --bg: #fbf1c7;
+    --fg: #3c3836;
+    --red: #cc241d;
+    --orange: #d65d0e;
+    --yellow: #d79921;
+    --green: #98971a;
+    --purple: #b16286;
+    --teal: #689d6a;
+    --blue: #458588;
+    --turquoise: #689d6a;
+    --gray-blue: #076678;
+}
+
+body.dark {
+    --fg: #fbf1c7;
+    --bg: #3c3836;
+    --red: #cc241d;
+    --orange: #d65d0e;
+    --yellow: #d79921;
+    --green: #98971a;
+    --purple: #b16286;
+    --teal: #689d6a;
+    --blue: #458588;
+    --turquoise: #689d6a;
+    --gray-blue: #076678;
+}
